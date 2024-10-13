@@ -9,9 +9,7 @@ int total_size = 0;     /* To keep track of total size (number of characters) */
     word_count++; 
     total_size += yyleng;  /* yyleng contains the length of the matched word */
 }
-abc { 
-    printf("ABC");   /* Replace "abc" with "ABC" */
-} 
+ 
 [ \t\n]+ ;   /* Ignore whitespace */
 . { 
     total_size += yyleng;   /* Count non-letter characters in total size */
